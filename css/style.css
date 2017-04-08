@@ -1,0 +1,101 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #e5e5e5;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+h1{
+	margin: 30px 0 10px 10px;
+	color: #404040;
+	font-size: 24px;
+}
+img{
+	max-width: 100%;
+	vertical-align: middle;
+}
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+#main-menu{
+	position: relative;
+	background-color: #ffffff;
+	text-align: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #dddddd;
+}
+#main-menu a{
+	padding: 15px;
+	font-size: 20px;
+	color: #737373;
+	text-decoration: none;
+}
+#main-menu > a:first-child{
+	position: absolute;
+	padding: 3px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	top:-65px;
+	left: 55px;
+}
+#main-menu > a:first-child > img{
+	max-width: 160px;
+	border-radius: 50%;
+}
+
+#main-menu a{
+	padding: 15px;
+	font-size: 20px;
+	color: #737373;
+	text-decoration: none;
+}
+#main-menu a:hover, #main-menu a.active{
+	color: black;
+}
+#main-menu a.active{
+	font-weight: bold;
+}
+#main-content{
+	margin: 10px -10px;
+	min-height: 250px;
+}
+#main-content .col{
+	padding: 5px;
+	float: left;
+	width: 33.3333333%;
+}
+#main-content .col .thumb img{
+	width:315px;
+	height:215px;
+	padding: 5px;
+	border: 1px solid #dfdfdf;
+}
+#main-content .content{
+	margin: 20px 10px 10px 10px;
+	padding: 5px 15px;
+	background-color: #ffffff;
+	min-height: 200px;
+}
+#footer{
+	clear: both;
+	padding: 30px 0;
+	text-align: center;
+}
+#footer p{
+	margin: 0;
+	padding: 30px 0 15px 0;
+	border-top: 1px solid #c5c5c5;
+}
+
+#chat{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	max-width:40px;
+	max-height: 40px;
+}
