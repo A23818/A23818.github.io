@@ -29,6 +29,34 @@ img{
 	padding: 15px 0;
 	border-bottom: 1px solid #dddddd;
 }
+#menu{
+	position: absolute;
+	float: left;
+	padding: 5px;
+}
+#menu ul{
+  background: #8AD385;
+  width: 240px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+#menu li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 1em;
+}
+#menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+#menu li:hover {
+  background: #CDE2CD;
+}
 #main-menu a{
 	padding: 15px;
 	font-size: 20px;
@@ -59,6 +87,11 @@ img{
 }
 #main-menu a.active{
 	font-weight: bold;
+}
+#right-content{
+	float: right;
+	width: 75%;
+	overflow: hidden;
 }
 #main-content{
 	margin: 10px -10px;
@@ -92,7 +125,7 @@ img{
 	border-top: 1px solid #c5c5c5;
 }
 
-#chat{
+#back{
 	position: fixed;
 	right: 30px;
 	bottom: 30px;
