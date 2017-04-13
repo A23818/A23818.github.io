@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial;
+}
+.products{
+	list-style-type: none;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.products li{
+	display: block;
+	float: left;
+	width: 250px;
+	text-align: center;
+	padding: 2px 5px;
+}
+.products .fix_image{
+	width: 120px;
+	height: 120px;
+}
+.products .cost::after{
+	content: " VND";
+}
