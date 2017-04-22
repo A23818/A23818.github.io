@@ -1,0 +1,155 @@
+﻿* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.254em;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #3B8BBA;
+}
+a:hover,
+a:visited {
+    color: #265778;
+}
+
+#container {
+    padding-left: 200px;
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+#menu {
+    position: fixed;
+    height: 100%;
+    background-color: #8AD385;
+    width: 200px;
+    left: 0;
+}
+/* menu */
+#menu ul {
+  background: #8AD385;
+  width: 200px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+#menu li {
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 1em;
+}
+#menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+#menu li:hover {
+  background: #CDE2CD;
+}
+
+/*Dropdown Menu*/
+#menu ul li {
+  position: relative;
+}
+#menu .sub-menu {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  display: none;
+}
+#menu li:hover .sub-menu {
+  display: block;
+}
+
+/*content*/
+#content {
+  padding: 1em 8em;
+}
+#header,
+.call-to-action {
+    text-align: center;
+}
+
+@keyframes title{
+  0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+/*header content*/
+#header img{
+  max-height: 150px;
+  max-width: 450px;
+  vertical-align: middle;
+}
+#slogan {
+    color: #8997A0;
+    font-size: 0.8em;
+    animation: title 10s ease infinite;
+}
+
+/*Call to Action*/
+.call-to-action {
+    padding: 1.5em 20%;
+    background: #EFEFEF;
+    border: 1px solid#E8E8E8;
+}
+
+/*Content*/
+.row {
+    overflow: auto;
+    margin: 1.5em auto;
+}
+.row .col {
+    float: left;
+    width: 31.3333%;
+    margin-right: 2.99%;
+}
+.row .col:last-child {
+    float: right;
+    margin-right: 0;
+}
+
+.row .col img {
+    float: left;
+    margin-right: 1em;
+    height: 128px;
+    width: 128px;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    vertical-align: middle;
+}
+.row .col:hover img{
+  opacity: 0.5
+}
+.row .col:hover {
+  cursor: pointer;
+}
+
+/*Footer*/
+#footer {
+  font-size: 85%;
+  border-top: 1px solid #E6E6E6;
+  color: #838383;
+  padding: 1em 3em;
+}
+#back {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+#back img{
+  max-width:40px;
+  max-height: 40px;
+}
