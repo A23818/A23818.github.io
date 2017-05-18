@@ -1,0 +1,25 @@
+*{
+	margin : 0;
+	padding: 0;
+}
+table {
+	background-color: #808080;
+	margin: auto;
+	padding: auto;
+}
+#result {
+	width: 190px;
+
+}
+.btn{
+	width: 34px;
+	height: 32px;
+}
+#eqa{
+	width: 34px;
+	height: 66px;
+}
+#zero{
+	width: 72px;
+	height: 32px;
+}
