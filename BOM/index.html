@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="wrap">
+		<div class="quiz">
+			<div class="question">
+				<span id="ques">Quốc gia vô địch World Cup 2014 ?</span>
+			</div>
+			<div class="answer">
+				<span id="ans1" onclick="changeColor(this)">Việt Nam</span>
+				<span id="ans2" onclick="changeColor(this)">Đức</span>
+				<span id="ans3" onclick="changeColor(this)">Pháp</span>
+			</div>
+		</div>
+		<button id="next" onclick="nextQuestion()">Next</button>		
+	</div>
+	<audio autoplay="autoplay">
+		<source src="music/FIFA World Cup 2006.mp3" type="audio/mp3" />
+	</audio> 
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html> 
