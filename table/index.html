@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>tablesorter</title>
+  <style>
+    table{
+      width:100%;
+    }
+    table,th,td{
+      border:1px solid gray;
+      border-collapse: collapse;
+    }
+    th,td{
+      padding:7px 15px;
+    }
+    th{
+      background-color: #008040;
+      color: white;
+    }
+    th:hover{
+      cursor: pointer;
+    }
+    tr:nth-child(even){
+      background-color: #F0F0F0;
+    }
+    tr:hover{
+      background-color: #ddd;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <table id="myTable" class="tablesorter">
+    <thead>
+      <tr>
+        <th>Tên học viên</th>
+        <th>Giới tính</th>
+        <th>Email</th>
+        <th>Số điên thoại</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>An</td>
+        <td>Nam</td>
+        <td>An@gmail.com</td>
+        <td>09874611</td>
+      </tr>
+      <tr>
+        <td>Bach</td>
+        <td>Nu</td>
+        <td>fbach@yahoo.com</td>
+        <td>01652348564</td>
+      </tr>
+      <tr>
+        <td>Chinh</td>
+        <td>Nu</td>
+        <td>chvnh@hotmail.com</td>
+        <td>01123456823</td>
+      </tr>
+    </tbody>
+  </table>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.26.0/js/jquery.tablesorter.min.js'></script>
+
+  <script src="js/index.js">   
+  </script>
+
+</body>
+</html>
